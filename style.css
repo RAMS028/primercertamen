@@ -201,3 +201,7 @@ footer {
     width: auto;
     display: block;
 }
+
+section {
+    scroll-margin-top: 80px;
+}
