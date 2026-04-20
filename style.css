@@ -2,24 +2,29 @@ body {
     font-family: 'Segoe UI', Tahoma, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #f5f7fa, #e4f1f9);
-    color: #333;
+    background: #0f172a;
+    color: #e5e7eb;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #0f172a;
-    padding: 15px 30px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    background: #020617;
+    padding: 10px 30px;
+    border-bottom: 1px solid #1e293b;
+}
+
+nav {
+    border-radius: 12px;
+    margin: 10px 20px;
 }
 
 .logo {
-    font-size: 28px;
+    font-size: 22px;
     font-weight: bold;
-    color: #38bdf8;
     letter-spacing: 2px;
+    color: #38bdf8;
 }
 
 .nav-links {
@@ -30,10 +35,9 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    font-weight: bold;
-    color: white;
+    color: #e5e7eb;
+    font-weight: 500;
     position: relative;
-    transition: 0.3s;
 }
 
 .nav-links a::after {
@@ -53,22 +57,22 @@ nav {
 
 header {
     text-align: center;
-    padding: 60px 20px;
+    padding: 100px 20px;
 }
 
 header h1 {
-    font-size: 40px;
+    font-size: 42px;
     margin-bottom: 10px;
 }
 
 header p {
     font-size: 18px;
-    color: #555;
+    color: #94a3b8;
 }
 
 section {
-    padding: 40px 20px;
-    max-width: 900px;
+    padding: 60px 20px;
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -79,51 +83,72 @@ section {
 }
 
 .card {
-    border-radius: 15px;
-    padding: 20px;
-    background: white;
-    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+    background: #020617;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #1e293b;
+    transition: 0.3s;
 }
 
 .card:hover {
     transform: translateY(-8px);
-    box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+    border-color: #38bdf8;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #020617;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background: #1e293b;
+    color: #38bdf8;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #1e293b;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    max-width: 400px;
+    gap: 15px;
+    max-width: 450px;
     margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    background: #020617;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #1e293b;
 }
 
 input, select, textarea {
-    padding: 10px;
+    padding: 12px;
     border-radius: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid #1e293b;
+    background: #0f172a;
+    color: #e5e7eb;
     outline: none;
-    transition: 0.2s;
 }
 
 input:focus, select:focus, textarea:focus {
     border-color: #38bdf8;
-    box-shadow: 0px 0px 5px rgba(56,189,248,0.5);
 }
 
 button {
     background: #38bdf8;
+    color: #020617;
     border: none;
     padding: 12px;
-    border-radius: 10px;
+    border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
-    color: white;
     transition: 0.3s;
 }
 
@@ -133,19 +158,20 @@ button:hover {
 }
 
 aside {
-    background: white;
+    max-width: 1000px;
+    margin: 30px auto;
     padding: 20px;
-    margin: 20px;
-    border-radius: 15px;
-    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    background: #020617;
+    border-radius: 12px;
+    border: 1px solid #1e293b;
 }
 
 footer {
     text-align: center;
-    padding: 15px;
-    background: #0f172a;
-    color: white;
-    margin-top: 20px;
+    padding: 25px;
+    border-top: 1px solid #1e293b;
+    margin-top: 40px;
+    color: #94a3b8;
 }
 
 @media (max-width: 768px) {
@@ -168,4 +194,10 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+}
+
+.logo img {
+    height: 80px;
+    width: auto;
+    display: block;
 }
