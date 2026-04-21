@@ -1,48 +1,48 @@
+/* ESTILOS GENERALES */
 body {
-    font-family: 'Segoe UI', Tahoma, sans-serif;
-    margin: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif; 
+    margin: 0; 
     padding: 0;
     background: #0f172a;
-    color: #e5e7eb;
+    color: #e5e7eb; 
 }
 
+/* BARRA DE NAVEGACIÓN  */
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #020617;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background: #020617; 
     padding: 10px 30px;
-    border-bottom: 1px solid #1e293b;
-    border-radius: 12px;
+    border-bottom: 1px solid #1e293b; 
+    border-radius: 12px; 
     margin: 10px 20px;
 }
 
-.logo {
-    font-size: 22px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    color: #38bdf8;
-}
 
+/* Logo en imagen */
 .logo img {
     height: 80px;
     width: auto;
     display: block;
 }
 
+/* Lista de enlaces */
 .nav-links {
     list-style: none;
     display: flex;
     gap: 25px;
 }
 
+/* Estilo de los enlaces */
 .nav-links a {
-    text-decoration: none;
+    text-decoration: none; 
     color: #e5e7eb;
     font-weight: 500;
     position: relative;
 }
 
+/* Línea animada debajo del link */
 .nav-links a::after {
     content: "";
     width: 0%;
@@ -54,10 +54,12 @@ nav {
     transition: 0.3s;
 }
 
+/* Efecto hover del link */
 .nav-links a:hover::after {
     width: 100%;
 }
 
+/*  HEADER PRINCIPAL  */
 header {
     text-align: center;
     padding: 100px 20px;
@@ -73,19 +75,22 @@ header p {
     color: #94a3b8;
 }
 
+/*  SECCIONES  */
 section {
     padding: 60px 20px;
     max-width: 1000px;
-    margin: auto;
+    margin: auto; 
     scroll-margin-top: 80px;
 }
 
+/* Grid de tarjetas */
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); 
     gap: 25px;
 }
 
+/* Tarjetas */
 .card {
     background: #020617;
     padding: 25px;
@@ -94,14 +99,16 @@ section {
     transition: 0.3s;
 }
 
+/* Efecto hover en tarjetas */
 .card:hover {
-    transform: translateY(-8px);
-    border-color: #38bdf8;
+    transform: translateY(-8px); 
+    border-color: #38bdf8; 
 }
 
+/* ====== TABLAS ====== */
 table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: collapse; 
     margin-top: 20px;
     background: #020617;
     border-radius: 10px;
@@ -120,6 +127,7 @@ td {
     border-bottom: 1px solid #1e293b;
 }
 
+/*  FORMULARIOS  */
 form {
     display: flex;
     flex-direction: column;
@@ -132,6 +140,7 @@ form {
     border: 1px solid #1e293b;
 }
 
+/* Inputs y textarea */
 input, select, textarea {
     padding: 12px;
     border-radius: 8px;
@@ -141,10 +150,12 @@ input, select, textarea {
     outline: none;
 }
 
+/* Efecto focus */
 input:focus, select:focus, textarea:focus {
     border-color: #38bdf8;
 }
 
+/* Botón */
 button {
     background: #38bdf8;
     color: #020617;
@@ -156,11 +167,13 @@ button {
     transition: 0.3s;
 }
 
+/* Hover del botón */
 button:hover {
     background: #0ea5e9;
     transform: scale(1.05);
 }
 
+/* ASIDE  */
 aside {
     max-width: 1000px;
     margin: 30px auto;
@@ -170,6 +183,7 @@ aside {
     border: 1px solid #1e293b;
 }
 
+/*  FOOTER  */
 footer {
     text-align: center;
     padding: 25px;
@@ -178,13 +192,14 @@ footer {
     color: #94a3b8;
 }
 
+/*  RESPONSIVE  */
 @media (max-width: 768px) {
     .grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); 
     }
 
     nav {
-        flex-direction: column;
+        flex-direction: column; 
         gap: 10px;
     }
 }
@@ -198,4 +213,19 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #1e293b;
 }
